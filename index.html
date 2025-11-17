@@ -259,19 +259,26 @@
 
 
     <script>
-        // --- 원본 데이터 (수정 가능) ---
-const eventData = {
+ // --- 원본 데이터 (수정 가능) ---
+        const eventData = {
             dday: "2025-12-27",
-            // ... (중략) ...
+            
+            // --- ▼ 11.17: 이 부분이 빠져있었습니다 ▼ ---
+            naverMap: {
+                xloc: "36.3669068",
+                yloc: "127.3805616",
+                addr: "대전광역시 서구 만년로70"
+            },
+            bankInfo: "아빠 농협 302-2832-1154-11(김승운)<br>엄마 농협 351-1149-8904-73(추현정)",
+            // --- ▲ 여기까지 다시 추가해야 합니다 ▲ ---
+
             kakao: {
                 title: '김온리 돌잔치에 초대합니다.',
                 description: '아빠 : 김승운 ♡  엄마 : 추현정\n날짜 : 2025-12-27(토) \n시간 : 오후 2시00분\n장소 : 베스타 뷔페\n홀 : 레퍼스룸\n\n여러분의 사랑과 관심 속에서 자라온 우리 아이가 태어난 지 벌써 1년이 되었습니다. 앞으로도 우리 아이가 밝고 씩씩하게 잘 자랄 수 있도록 참석하셔서 따뜻한 응원 부탁드립니다.\n\n',
-                // [수정] 카카오 공유 이미지도 절대 경로 확인
                 imageUrl: 'https://pocketsociety.github.io/only-birthday/images/main.jpg',
-                webUrl: 'https://pocketsociety.github.io/only-birthday/' // <-- 이렇게 수정
+                webUrl: 'https://pocketsociety.github.io/only-birthday/'
             }
         };
-
         // --- 기능 실행 ---
         
         /**
@@ -435,5 +442,6 @@ const eventData = {
     </script>
 </body>
 </html>
+
 
 
